@@ -1,0 +1,153 @@
+---
+title: "Lesson 3: Fundamentals of Sequencing"
+description: "Learn the core sequencing techniques on Digitakt and Digitone to create dynamic patterns."
+date: "2025-01-26"
+---
+
+import Sequencer from '../../components/sequencer';
+
+# Lesson 3: Fundamentals of Sequencing
+
+## Overview
+Sequencing is the heart of music production with Digitakt and Digitone. Understanding sequencing fundamentals allows you to build engaging patterns, layer tracks effectively, and bring your musical ideas to life.
+
+### **What You'll Learn:**
+- The differences between step, grid, and live recording modes.
+- How to navigate and structure patterns effectively.
+- Using parameter locks and conditional trigs for variation.
+- Practical exercises for rhythm and melody programming.
+- Performance strategies for live improvisation.
+
+---
+
+## 1. Step, Grid, and Live Recording Modes
+Digitakt and Digitone provide three primary ways to input sequences:
+
+### **1.1 Step Recording Mode**
+- Enter notes manually by stepping through the sequence.
+- Useful for precise programming of drum patterns and melodies.
+
+**Exercise:**
+1. Enter step recording mode (`REC` + `GRID`).
+2. Input a basic kick drum pattern:
+
+<Sequencer 
+  variant="digitakt" 
+  activeSteps={[{ step: 1, type: 'red' }, { step: 5, type: 'red' }, { step: 9, type: 'red' }, { step: 13, type: 'red' }]} 
+/>
+
+### **1.2 Grid Recording Mode**
+- Play and record trigs while the sequencer is running.
+- Great for live groove creation and experimentation.
+- Grid mode allows for quantization settings to be adjusted, affecting timing accuracy and groove feel.
+
+**Quantization Options:**
+- **OFF:** Perfect for humanized, loose timing.
+- **50%:** Balances live feel with some correction.
+- **100%:** Snaps to grid for precise timing.
+
+**Exercise:**
+1. Enter grid mode (`REC` + `PLAY`).
+2. Add hi-hats manually while listening to playback.
+3. Experiment with different quantization settings to hear their effect on groove.
+4. Use quantization creatively to create swing and shuffle.
+
+### **1.3 Live Recording Mode**
+- Capture real-time playing, including velocity and timing nuances.
+- Ideal for expressive performances with external MIDI controllers.
+
+**Exercise:**
+1. Enable live recording mode (`REC` + `PLAY`).
+2. Play a melody using the Digitakt/Digitone’s pads.
+3. Adjust velocity sensitivity for dynamic expressiveness.
+
+---
+
+## 2. Understanding Pattern Structure
+A solid grasp of pattern organization is essential for structuring your music effectively.
+
+### **2.1 Patterns and Banks**
+- **Patterns:** Contain track sequencing data and parameter automation.
+- **Banks:** Store up to 16 patterns, allowing for easy project management.
+
+**Tip:** Use different patterns for intros, breakdowns, and transitions.
+
+### **2.2 Track Length and Scale Settings**
+- Set individual track lengths to create polymetric sequences.
+- Adjust scale multipliers for speed variations.
+- Utilize pattern chaining for longer compositions.
+
+**Exercise:**
+1. Set the kick track to 16 steps.
+2. Set a melody track to 12 steps for polymetric effects.
+3. Create different pattern variations and chain them.
+
+---
+
+## 3. Using Parameter Locks and Conditional Trigs
+Parameter locks and trig conditions add variety and dynamism to your sequences.
+
+### **3.1 Parameter Locks**
+- Assign different parameter values to individual trigs.
+- Use them to create evolving textures and automation.
+- Copy and paste parameter locks across multiple steps to speed up workflow:
+  1. Hold the step with the desired lock and press `[FUNC] + COPY`.
+  2. Navigate to the target step and press `[FUNC] + PASTE`.
+
+**Exercise:**
+1. Apply a filter lock to step 5 of a melody sequence.
+2. Use parameter locks to automate panning on hi-hats.
+3. Copy and paste locked parameters to create rhythmic changes.
+4. Experiment with locking effects such as reverb and delay sends.
+
+### **3.2 Conditional Trigs**
+- Add variation by setting conditions for step triggering.
+- Examples include `1:2` (plays every second cycle) and `FILL` (only triggers during fills).
+
+<Sequencer 
+  variant="digitakt" 
+  activeSteps={[{ step: 3, type: 'red' }, { step: 7, type: 'red' }]} 
+/>
+
+**Exercise:**
+1. Add a snare hit with a `1:2` condition.
+2. Introduce FILL trigs for live performance excitement.
+3. Experiment with different trig conditions to create evolving patterns.
+
+---
+
+## 4. Advanced Sequencing Techniques
+Once the basics are mastered, explore advanced methods to add depth to your patterns.
+
+### **4.1 Polyrhythms and Polymeters**
+- Create rhythms with varying track lengths.
+- Experiment with odd step counts for evolving grooves.
+- Combine different rhythmic subdivisions to create harmonic and percussive interplay.
+
+**Exercise:**
+1. Set track lengths to 16 and 15 steps respectively.
+2. Observe how they drift apart over time.
+3. Layer kick and melody patterns with contrasting lengths to create tension and release.
+
+### **4.2 Microtiming Adjustments**
+- Shift trigs slightly forward or backward for a humanized feel.
+- Useful for adding swing to your sequences.
+
+**Exercise:**
+1. Nudge a snare slightly off-grid for a natural groove.
+2. Use microtiming to add push-pull effect to hi-hats.
+
+---
+
+## Summary
+In this lesson, you've learned:
+
+- The three sequencing modes: step, grid, and live.
+- How to organize patterns and tracks efficiently.
+- Applying parameter locks and conditional trigs for variety.
+- Advanced techniques like polyrhythms and microtiming.
+- Performance strategies for live improvisation.
+
+**Next Steps:** Proceed to [Lesson 4: Basic Sound Design](../module1/lesson4).
+
+---

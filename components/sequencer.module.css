@@ -1,0 +1,58 @@
+.sequencerGrid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 8px;
+  max-width: 450px;
+  padding-top: 20px;
+}
+
+.sequencerButton {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--color-inactive);
+  background-color: #222;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Digitakt and Digitone button size differentiation */
+.digitaktButton {
+  width: 50px;
+}
+
+.digitoneButton {
+  width: 30px;
+}
+
+/* Borders for steps 1, 5, 9, 13 */
+.borderStep {
+  border-color: var(--color-inactive);
+}
+
+/* Active step colors */
+.trigRed {
+  color: var(--color-red);
+}
+
+.trigYellow {
+  color: var(--color-yellow);
+}
+
+.trigGreen {
+  color: var(--color-green);
+}
+
+.trigPurple {
+  color: var(--color-purple);
+}
+
+/* Inactive step color */
+.trigInactive {
+  color: var(--color-inactive);
+}

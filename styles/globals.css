@@ -1,0 +1,22 @@
+:root {
+  --color-red: #ff4d4d;
+  --color-yellow: #ffeb3b;
+  --color-green: #00ff00;
+  --color-purple: #d800d8;
+  --color-inactive: #888;
+  --accent-color: #cb1617;
+}
+
+a:link {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:visited {
+  color: #ff8383
+}
+
+a:hover {
+  color: #ff4d4d; /* A lighter shade for hover effect */
+}

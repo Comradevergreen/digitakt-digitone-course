@@ -1,7 +1,7 @@
 {
   "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
+  "module1": "Module 1: Getting Started with Digitakt & Digitone",
+  "module2": "Module 2: Deep Dive into Sound Design",
   "about": {
     "title": "About",
     "type": "page"
@@ -9,7 +9,7 @@
   "contact": {
     "title": "Contact ↗",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
+    "href": "https://t.me/comradevergreen",
     "newWindow": true
   }
 }
